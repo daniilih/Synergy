@@ -125,9 +125,7 @@ DIGITS = {
 }
 
 def print_star_date(dd, mm, yyyy):
-    """
-    Выводит дату в формате дд мм гггг, используя символы *
-    """
+    
     date_str = f"{dd:02d} {mm:02d} {yyyy:04d}"
     
     lines = [[] for _ in range(7)]
@@ -150,8 +148,7 @@ def print_star_date(dd, mm, yyyy):
     print()
 
 def main():
-    print("--- Программа стилистического преобразования даты ---")
-    
+   
     try:
         day, month, year = get_birth_date()
     except ValueError:
